@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/problem.css">
+  <script src="js/hw2problem4.js"></script>
+</head>
+<body>
+<div class="form">
+  <div class="title">Problem 4</div>
+  <div class="subtitle">Найти напряженность поля равномерно заряженной нити в виде четверти кольца в точке центра его кривизны. Линейная плотность заряда нити λ. Радиус R.</div>
+  <img src="img/hw2_4.svg" alt="" height="200">
+  <div class="input-container ic">
+    <input id="lambda" class="input" type="text" placeholder=" " />
+    <div class="cut"></div>
+    <label for="lambda" class="placeholder">λ (Кл/м)</label>
+  </div>
+  <div class="input-container ic">
+    <input id="R" class="input" type="text" placeholder=" " />
+    <div class="cut"></div>
+    <label for="R" class="placeholder">R (м)</label>
+  </div>
+  <button class="submit" onclick="solve()">submit</button>
+  <div class="answer-container">
+    <input readonly id="answer" class="answer" type="text" placeholder="answer (Н/Кл)" />
+  </div>
+</div>
+</body>
+</html>
