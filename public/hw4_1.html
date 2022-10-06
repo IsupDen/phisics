@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>hw4_7</title>
+  <meta charset="UTF-8">
+  <title>hw4_7</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/problem.css">
+  <script src="js/hw4problem7.js"></script>
 </head>
 <body>
-
+<div class="form">
+  <div class="title">Problem 7</div>
+  <div class="subtitle">Небольшой шарик висит над горизонтальной безграничной проводящей плоскостью на изолирующей упругой нити жесткости k. После того как шарик зарядили, он опустился на x см, и его расстояние до проводящей плоскости стало равным l. Найти заряд шарика.</div>
+  <img src="img/hw4_7.svg" alt="" height="200">
+  <div class="input-container ic">
+    <input id="k" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="k" class="placeholder">k</label>
+  </div>
+  <div class="input-container ic">
+    <input id="x" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="x" class="placeholder">x (см)</label>
+  </div>
+  <div class="input-container ic">
+    <input id="l" class="input" type="number" placeholder=" " />
+    <div class="cut cut-short"></div>
+    <label for="l" class="placeholder">l (см)</label>
+  </div>
+  <button class="submit" onclick="solve()">submit</button>
+  <div class="answer-container">
+    <input readonly id="answer" class="answer" type="text" placeholder="answer (нКл)" />
+  </div>
+</div>
 </body>
 </html>

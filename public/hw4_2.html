@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>hw4_8</title>
+  <meta charset="UTF-8">
+  <title>hw4_8</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/problem.css">
+  <script src="js/hw4problem8.js"></script>
 </head>
 <body>
-
+<div class="form">
+  <div class="title">Problem 8</div>
+  <div class="subtitle">Точечный заряд q находится на расстоянии l от безграничной проводящей плоскости. Какую работу необходимо совершить, чтобы медленно удалить этот заряд на очень большое расстояние от плоскости?</div>
+  <img src="img/hw4_8.svg" alt="" height="200">
+  <div class="input-container ic">
+    <input id="q" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="q" class="placeholder">q (Кл)</label>
+  </div>
+  <div class="input-container ic">
+    <input id="l" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="l" class="placeholder">l (см)</label>
+  </div>
+  <button class="submit" onclick="solve()">submit</button>
+  <div class="answer-container">
+    <input readonly id="answer" class="answer" type="text" placeholder="answer (Дж)" />
+  </div>
+</div>
 </body>
 </html>
