@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>hw5_3</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/problem.css">
+  <script src="js/hw5problem3.js"></script>
+</head>
+<body>
+<div class="form">
+  <div class="title">Problem 3</div>
+  <div class="subtitle">Тонкая пластина из диэлектрика с Диэлектрической проницаемостью ε помещена в однородное электрическое поле так, что нормаль к ее поверхности составляет угол α с напряженностью E0. Найти напряженность электрического поля внутри диэлектрика. </div>
+  <img src="img/hw5_3.svg" alt="" height="200">
+  <div class="input-container ic">
+    <input id="e" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="e" class="placeholder">e (Ф/м)</label>
+  </div>
+  <div class="input-container ic">
+    <input id="a" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="a" class="placeholder">a</label>
+  </div>
+  <div class="input-container ic">
+    <input id="e0" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="e0" class="placeholder">E0 (В/м)</label>
+  </div>
+  <button class="submit" onclick="solve()">submit</button>
+  <div class="answer-container">
+    <input readonly id="answer" class="answer" type="text" placeholder="answer (В/м)" />
+  </div>
+</div>
+</body>
+</html>

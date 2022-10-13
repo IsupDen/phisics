@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>hw5_8</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/problem.css">
+  <script src="js/hw5problem5.js"></script>
+</head>
+<body>
+<div class="form">
+  <div class="title">Problem 5</div>
+  <div class="subtitle">Газоразрядный счетчик элементарных частиц состоит из трубки радиуса r2=10 мм и натянутой по оси трубки нити радиуса r1=50 мкм. Длина счетчика l=150 мм. Положив ε=1, оценить межэлектродную емкость C.</div>
+  <img src="img/hw5_5.svg" alt="" height="200">
+  <div class="input-container ic">
+    <input id="l" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="l" class="placeholder">l (мм)</label>
+  </div>
+  <div class="input-container ic">
+    <input id="r1" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="r1" class="placeholder">r1 (мкм)</label>
+  </div>
+  <div class="input-container ic">
+    <input id="r2" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="r2" class="placeholder">r2 (мм)</label>
+  </div>
+  <button class="submit" onclick="solve()">submit</button>
+  <div class="answer-container">
+    <input readonly id="answer" class="answer" type="text" placeholder="answer (пФ)" />
+  </div>
+</div>
+</body>
+</html>
