@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>hw5_8</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/problem.css">
+  <script src="js/hw6problem6.js"></script>
+</head>
+<body>
+<div class="form">
+  <div class="title">Problem 6</div>
+  <div class="subtitle">В проводнике сопротивлением R за время t сила тока равномерно возрастает от 0 до Imax. Какое количество теплоты Q выделилось за это время в проводнике?</div>
+  <div class="input-container ic">
+    <input id="R" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="R" class="placeholder">R (Ом)</label>
+  </div>
+  <div class="input-container ic">
+    <input id="t" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="t" class="placeholder">t (с)</label>
+  </div>
+  <div class="input-container ic">
+    <input id="I0" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="I0" class="placeholder">I0 (А)</label>
+  </div>
+  <div class="input-container ic">
+    <input id="Imax" class="input" type="number" placeholder=" " />
+    <div class="cut"></div>
+    <label for="Imax" class="placeholder">Imax (А)</label>
+  </div>
+  <button class="submit" onclick="solve()">submit</button>
+  <div class="answer-container">
+    <input readonly id="answer" class="answer" type="text" placeholder="answer (кДж)" />
+  </div>
+</div>
+</body>
+</html>
