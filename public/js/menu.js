@@ -1,1 +1,1 @@
-$(function() { $('#menu').load('sidebar.html') })
+$(function() { $('#menu').load('public/sidebar.html') })
